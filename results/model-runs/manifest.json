@@ -1,0 +1,188 @@
+{
+ "config_sha256": "0cb3672a18d2306e210a4a5020dde76a6c1297d9422208684f0267ee401b63eb",
+ "config": {
+  "base_url": "http://localhost:1234/v1",
+  "models": [
+   "llama-3.2-3b-instruct",
+   "qwen2.5-coder-1.5b-instruct-mlx"
+  ],
+  "embed_model": "text-embedding-nomic-embed-text-v1.5",
+  "inputs_sha256": {
+   "catalog.duckdb": "77b39b0c444fec456067060d5bd7da6b109b141fb71236f70d31564338d58f05",
+   "documents.jsonl": "e4e916ef35978d88ac5baa26952091ed51759b70258a15218fafbd85db311924",
+   "questions.jsonl": "7bbbf45f68db4ff435de690b02636400c2c5c28baff3b17699cdd7bb9e633c8f",
+   "questions_paraphrased.jsonl": "e292d7d40605a0a4d5d9782c44ec5294c2b6ca34a2132fc0ad975fc0ba043486"
+  },
+  "source_sha256": {
+   "__init__.py": "23867f1847d6d77d09fa5b21ff1bcf337c72b5ed6103a406cfccce8fa4fb47c7",
+   "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+   "answer.py": "aca4cf867bfe6040de591691116c540526d01abe9bdaee7ee7b17d7589950099",
+   "cli.py": "3f327d1a6b91cefce38bc9c769701596b4f94094714bd9a25571709f864fe7d1",
+   "documents.py": "94943a8760a95119546bee97eba129f4c5572c87584f717d82eec6b60e9cbaac",
+   "evaluate.py": "2882127fc15c77740dcd8a69056343b9f409d99c5b50f2e84181fb110177d680",
+   "generator.py": "a7f5b1d999f8c64823e5ecd6cb21466199f5e1b39f646cbd98513792c6214f02",
+   "linker.py": "1383eb3f986c96dbf99215f6d5a61ec817d30f6f761145696cc23fb64e55c4df",
+   "llm.py": "e4117343439ffe62754e8f314b95ff84e8967413319195271a71c665bd1b8428",
+   "model.py": "f8cdc38263376a9e038abc2085cf8a99a81f760524fae21552d342445d448a8f",
+   "paraphrases.py": "e1c3281f3f12961f248cd16c945e9edabcd4946e7628c12f9530cd91c150c7ce",
+   "planner.py": "be8f3b8b1896cfad7a1d4b29ad1fdbda940c0123e7b5f2aa36862b8e92c29b02",
+   "query.py": "37f72609d4f6c60fc981444fc5e395769faf88c0210c423643f0662d88716a4d",
+   "questions.py": "4fac30a72b45c5f3acd3529ab508480f010408715112b0d8e4a71068144feb59",
+   "retrieval.py": "e3896421f89bce7934c54bed3d36ae54269ecf75a0ffd8fba8f43a27028e477c",
+   "store.py": "2c99a6b425e2a9c6e18beb88da252ddaf906382b3b08d5d9a3df59036fd74f64",
+   "systems.py": "6a343704f42d8214c8835e4afd6618053f1fc6b81ebc29a1bd5050152345d4cb"
+  },
+  "runner_sha256": "4b2301996415023fd146d3f75a68ea37a8bc934751efbeb4fcf2b2a29e9a2b27",
+  "temperature": 0.0,
+  "planner_max_tokens": 200,
+  "reader_max_tokens": 500,
+  "retrieval_k": 8,
+  "document_max_chars": 2500,
+  "question_counts": {
+   "questions": 120,
+   "questions_paraphrased": 60
+  },
+  "execution": "sequential questions and systems; cached real embeddings; no prompt tuning"
+ },
+ "started_at_utc": "2026-11-16T16:27:53.002344+00:00",
+ "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+ "machine": "arm64",
+ "python": "3.14.0",
+ "packages": {
+  "catalog-graph-rag": "0.2.0",
+  "duckdb": "2.0.0",
+  "pydantic": "2.14.3"
+ },
+ "endpoint_models_before": {
+  "data": [
+   {
+    "id": "llama-3.2-3b-instruct",
+    "object": "model",
+    "owned_by": "organization_owner"
+   },
+   {
+    "id": "microsoft/phi-4-mini-reasoning",
+    "object": "model",
+    "owned_by": "organization_owner"
+   },
+   {
+    "id": "qwen2.5-coder-1.5b-instruct-mlx",
+    "object": "model",
+    "owned_by": "organization_owner"
+   },
+   {
+    "id": "text-embedding-nomic-embed-text-v1.5",
+    "object": "model",
+    "owned_by": "organization_owner"
+   }
+  ],
+  "object": "list"
+ },
+ "endpoint_details_before": {
+  "data": [
+   {
+    "id": "llama-3.2-3b-instruct",
+    "object": "model",
+    "type": "llm",
+    "publisher": "mlx-community",
+    "arch": "llama",
+    "compatibility_type": "mlx",
+    "quantization": "4bit",
+    "state": "loaded",
+    "max_context_length": 131072,
+    "loaded_context_length": 8192,
+    "capabilities": [
+     "tool_use"
+    ]
+   },
+   {
+    "id": "microsoft/phi-4-mini-reasoning",
+    "object": "model",
+    "type": "llm",
+    "publisher": "microsoft",
+    "arch": "phi3",
+    "compatibility_type": "mlx",
+    "quantization": "4bit",
+    "state": "not-loaded",
+    "max_context_length": 131072
+   },
+   {
+    "id": "qwen2.5-coder-1.5b-instruct-mlx",
+    "object": "model",
+    "type": "llm",
+    "publisher": "lmstudio-community",
+    "arch": "qwen2",
+    "compatibility_type": "mlx",
+    "quantization": "4bit",
+    "state": "not-loaded",
+    "max_context_length": 32768
+   },
+   {
+    "id": "text-embedding-nomic-embed-text-v1.5",
+    "object": "model",
+    "type": "embeddings",
+    "publisher": "nomic-ai",
+    "arch": "nomic-bert",
+    "compatibility_type": "gguf",
+    "quantization": "Q4_K_M",
+    "state": "not-loaded",
+    "max_context_length": 2048
+   }
+  ],
+  "object": "list"
+ },
+ "finished_at_utc": "2026-11-16T17:40:44.421653+00:00",
+ "endpoint_details_after": {
+  "data": [
+   {
+    "id": "qwen2.5-coder-1.5b-instruct-mlx",
+    "object": "model",
+    "type": "llm",
+    "publisher": "lmstudio-community",
+    "arch": "qwen2",
+    "compatibility_type": "mlx",
+    "quantization": "4bit",
+    "state": "loaded",
+    "max_context_length": 32768,
+    "loaded_context_length": 8192
+   },
+   {
+    "id": "llama-3.2-3b-instruct",
+    "object": "model",
+    "type": "llm",
+    "publisher": "mlx-community",
+    "arch": "llama",
+    "compatibility_type": "mlx",
+    "quantization": "4bit",
+    "state": "not-loaded",
+    "max_context_length": 131072,
+    "capabilities": [
+     "tool_use"
+    ]
+   },
+   {
+    "id": "microsoft/phi-4-mini-reasoning",
+    "object": "model",
+    "type": "llm",
+    "publisher": "microsoft",
+    "arch": "phi3",
+    "compatibility_type": "mlx",
+    "quantization": "4bit",
+    "state": "not-loaded",
+    "max_context_length": 131072
+   },
+   {
+    "id": "text-embedding-nomic-embed-text-v1.5",
+    "object": "model",
+    "type": "embeddings",
+    "publisher": "nomic-ai",
+    "arch": "nomic-bert",
+    "compatibility_type": "gguf",
+    "quantization": "Q4_K_M",
+    "state": "not-loaded",
+    "max_context_length": 2048
+   }
+  ],
+  "object": "list"
+ }
+}

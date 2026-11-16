@@ -1,0 +1,27 @@
+{
+ "lookup": {
+  "questions": 15,
+  "top1": 1.0,
+  "in_candidates": 1.0
+ },
+ "one_hop": {
+  "questions": 15,
+  "top1": 1.0,
+  "in_candidates": 1.0
+ },
+ "multi_hop": {
+  "questions": 15,
+  "top1": 1.0,
+  "in_candidates": 1.0
+ },
+ "negative": {
+  "questions": 15,
+  "top1": 1.0,
+  "in_candidates": 1.0
+ },
+ "overall": {
+  "questions": 60,
+  "top1": 1.0,
+  "in_candidates": 1.0
+ }
+}

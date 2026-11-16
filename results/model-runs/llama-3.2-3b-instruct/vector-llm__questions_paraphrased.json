@@ -1,0 +1,1293 @@
+{
+ "meta": {
+  "system": "vector-llm",
+  "questions": "questions_paraphrased",
+  "model": "llama-3.2-3b-instruct",
+  "embed_model": "text-embedding-nomic-embed-text-v1.5",
+  "config_sha256": "0cb3672a18d2306e210a4a5020dde76a6c1297d9422208684f0267ee401b63eb",
+  "temperature": 0,
+  "k": 8,
+  "max_chars": 2500,
+  "embeddings_cached": true,
+  "trace": "vector-llm__questions_paraphrased.trace.jsonl",
+  "checkpoint": "vector-llm__questions_paraphrased.checkpoint.jsonl",
+  "model_calls": 60,
+  "prompt_tokens": 54873,
+  "completion_tokens": 960,
+  "ran_at": "2026-11-16"
+ },
+ "summary": {
+  "overall": {
+   "questions": 60,
+   "precision": 0.439,
+   "recall": 0.46,
+   "f1": 0.431,
+   "exact": 0.35,
+   "abstained": 0.0,
+   "median_ms": 4299.7,
+   "false_positive": 0.467
+  },
+  "lookup": {
+   "questions": 15,
+   "precision": 0.856,
+   "recall": 0.92,
+   "f1": 0.87,
+   "exact": 0.733,
+   "abstained": 0.0,
+   "median_ms": 6294.6
+  },
+  "one_hop": {
+   "questions": 15,
+   "precision": 0.222,
+   "recall": 0.333,
+   "f1": 0.256,
+   "exact": 0.133,
+   "abstained": 0.0,
+   "median_ms": 4601.1
+  },
+  "multi_hop": {
+   "questions": 15,
+   "precision": 0.144,
+   "recall": 0.052,
+   "f1": 0.064,
+   "exact": 0.0,
+   "abstained": 0.0,
+   "median_ms": 3825.4
+  },
+  "negative": {
+   "questions": 15,
+   "precision": 0.533,
+   "recall": 0.533,
+   "f1": 0.533,
+   "exact": 0.533,
+   "abstained": 0.0,
+   "median_ms": 3831.3,
+   "false_positive": 0.467
+  }
+ },
+ "rows": [
+  {
+   "id": "p-lookup-001",
+   "group": "lookup",
+   "question": "Point me to the person in charge of the stg wms_campaigns table.",
+   "gold": [
+    "Priya Nair"
+   ],
+   "predicted": [
+    "Priya Nair"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 11.80994654099959,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-002",
+   "group": "lookup",
+   "question": "I need the owner for crm.tickets.",
+   "gold": [
+    "Lucas Ferreira"
+   ],
+   "predicted": [
+    "Lucas Ferreira",
+    "Sofia Romano",
+    "Kwame Mensah"
+   ],
+   "precision": 0.3333333333333333,
+   "recall": 1.0,
+   "f1": 0.5,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 13.81051799999932,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-003",
+   "group": "lookup",
+   "question": "Point me to the person in charge of stg.mkt_invoices.",
+   "gold": [
+    "Mei Tanaka"
+   ],
+   "predicted": [
+    "Mei Tanaka"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 18.69616316599968,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-004",
+   "group": "lookup",
+   "question": "Who looks after account health?",
+   "gold": [
+    "Hannah Schmidt"
+   ],
+   "predicted": [
+    "Hannah Schmidt",
+    "Tomasz Kowalski"
+   ],
+   "precision": 0.5,
+   "recall": 1.0,
+   "f1": 0.6666666666666666,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.683864458999778,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-005",
+   "group": "lookup",
+   "question": "Who looks after our Lead Conversion board?",
+   "gold": [
+    "Daniel Okafor"
+   ],
+   "predicted": [
+    "Daniel Okafor"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 7.403747582999131,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-006",
+   "group": "lookup",
+   "question": "Who's on the hook for the review sentiment dashboard?",
+   "gold": [
+    "Sofia Romano"
+   ],
+   "predicted": [
+    "Sofia Romano"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 6.294617584000662,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-007",
+   "group": "lookup",
+   "question": "Who looks after job pl_stg_shop_employees?",
+   "gold": [
+    "Lucas Ferreira"
+   ],
+   "predicted": [
+    "Lucas Ferreira"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.687944584000434,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-008",
+   "group": "lookup",
+   "question": "Who looks after the pl_core_fct_tickets job?",
+   "gold": [
+    "Daniel Okafor"
+   ],
+   "predicted": [
+    "Daniel Okafor"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 7.187619792000078,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-009",
+   "group": "lookup",
+   "question": "Who looks after job pl_core_fct_fulfilment?",
+   "gold": [
+    "Hannah Schmidt"
+   ],
+   "predicted": [
+    "Hannah Schmidt"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.58859908300019,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-010",
+   "group": "lookup",
+   "question": "Who is accountable for stg.mkt_order_items.lne_total?",
+   "gold": [
+    "Omar Haddad"
+   ],
+   "predicted": [
+    "Daniel Okafor"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.28208341699974,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-011",
+   "group": "lookup",
+   "question": "Who is accountable for is trial in stg crm subscriptions?",
+   "gold": [
+    "Arjun Mehta"
+   ],
+   "predicted": [
+    "Arjun Mehta"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.034047708999424,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-012",
+   "group": "lookup",
+   "question": "What do we ingest from the web source system?",
+   "gold": [
+    "web.addresses",
+    "web.customers",
+    "web.leads",
+    "web.payments",
+    "web.shipments"
+   ],
+   "predicted": [
+    "web.shipments",
+    "web.addresses",
+    "web.payments",
+    "web.leads",
+    "web.customers"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 2.7744472080003106,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-013",
+   "group": "lookup",
+   "question": "Show me every table the billing source system sends us.",
+   "gold": [
+    "billing.accounts",
+    "billing.invoices",
+    "billing.order_items",
+    "billing.orders",
+    "billing.refunds"
+   ],
+   "predicted": [
+    "billing.orders",
+    "billing.invoices",
+    "billing.order_items",
+    "billing.accounts"
+   ],
+   "precision": 1.0,
+   "recall": 0.8,
+   "f1": 0.888888888888889,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.530236374999731,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-014",
+   "group": "lookup",
+   "question": "What fields are in table core.fct_sesions?",
+   "gold": [
+    "core.fct_sessions.device",
+    "core.fct_sessions.duration_seconds",
+    "core.fct_sessions.page_views",
+    "core.fct_sessions.postal_code",
+    "core.fct_sessions.started_at",
+    "core.fct_sessions.street",
+    "core.fct_sessions.visitor_id"
+   ],
+   "predicted": [
+    "core.fct_sessions.street",
+    "core.fct_sessions.page_views",
+    "core.fct_sessions.started_at",
+    "core.fct_sessions.postal_code",
+    "core.fct_sessions.device",
+    "core.fct_sessions.duration_seconds",
+    "core.fct_sessions.visitor_id"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 6.502982875000271,
+   "error": ""
+  },
+  {
+   "id": "p-lookup-015",
+   "group": "lookup",
+   "question": "Give me the schema of core.dim_customer.",
+   "gold": [
+    "core.dim_customer.city",
+    "core.dim_customer.country",
+    "core.dim_customer.email",
+    "core.dim_customer.full_name",
+    "core.dim_customer.is_active",
+    "core.dim_customer.segment",
+    "core.dim_customer.signup_date",
+    "core.dim_customer.updated_at"
+   ],
+   "predicted": [
+    "core.dim_customer.email",
+    "core.dim_customer.updated_at",
+    "core.dim_customer.city",
+    "core.dim_customer.is_active",
+    "core.dim_customer.full_name",
+    "core.dim_customer.signup_date",
+    "core.dim_customer.country",
+    "core.dim_customer.segment"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 6.395207250000567,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-001",
+   "group": "one_hop",
+   "question": "Name the pipelines that pick up wms sessions updated_at as an immediate input.",
+   "gold": [
+    "pl_stg_wms_sessions"
+   ],
+   "predicted": [
+    "pl_stg_wms_sessions",
+    "pl_stg_wms_products",
+    "pl_stg_wms_inventory"
+   ],
+   "precision": 0.3333333333333333,
+   "recall": 1.0,
+   "f1": 0.5,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 7.412021957999968,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-002",
+   "group": "one_hop",
+   "question": "What jobs consume support.returns.returnedon first-hand?",
+   "gold": [
+    "pl_stg_support_returns"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.40877433300011,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-003",
+   "group": "one_hop",
+   "question": "Name the pipelines that pick up stg.billing_invoices's gross_amount field as an immediate input.",
+   "gold": [
+    "pl_core_fct_collections",
+    "pl_core_fct_invoices"
+   ],
+   "predicted": [
+    "pl_stg_billing_invoices",
+    "pl_stg_mkt_invoices"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 8.05160720799995,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-004",
+   "group": "one_hop",
+   "question": "What gets calculated right from the returned_on field on stg.support_returns?",
+   "gold": [
+    "core.fct_returns.returned_on"
+   ],
+   "predicted": [
+    "stg.support_returns.returned_on"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.353489209000145,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-005",
+   "group": "one_hop",
+   "question": "What gets calculated right from campaign id in stg shop campaigns?",
+   "gold": [
+    "core.dim_campaign.campaign_id",
+    "core.fct_spend.campaign_id"
+   ],
+   "predicted": [
+    "stg.shop_campaigns.campaign_id"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.732829750000747,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-006",
+   "group": "one_hop",
+   "question": "What gets calculated right from updated at in support returns?",
+   "gold": [
+    "stg.support_returns.updated_at"
+   ],
+   "predicted": [
+    "support.returns.updated_at"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.8970066250003583,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-007",
+   "group": "one_hop",
+   "question": "The ticket_id field on stg.crm_tickets is built from which fields, just one step back?",
+   "gold": [
+    "crm.tickets.ticket_id"
+   ],
+   "predicted": [
+    "stg.crm_tickets.ticket_id is computed from crm.tickets.ticket_id"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.601051291000658,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-008",
+   "group": "one_hop",
+   "question": "The is_trial field on stg.crm_subscriptions is built from which fields, just one step back?",
+   "gold": [
+    "crm.subscriptions.is_trial"
+   ],
+   "predicted": [
+    "crm.subscriptions.is_trial"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.008001958000023,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-009",
+   "group": "one_hop",
+   "question": "The closed_at field on stg.support_tickets is built from which fields, just one step back?",
+   "gold": [
+    "support.tickets.closed_at"
+   ],
+   "predicted": [
+    "stg.support_tickets.closed_at is computed from stg.support_tickets.opened_at"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.317288707999978,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-010",
+   "group": "one_hop",
+   "question": "Where is mart.campaign_roi's avg_spend field surfaced to users with no extra transformation?",
+   "gold": [
+    "rpt_new_customer_cohorts",
+    "rpt_segment_profitability"
+   ],
+   "predicted": [
+    "core.fct_spend.spend"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.888179833000322,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-011",
+   "group": "one_hop",
+   "question": "Where is line total in mart shipping sla surfaced to users with no extra transformation?",
+   "gold": [
+    "rpt_payments_health",
+    "rpt_refund_monitor",
+    "rpt_shipping_sla"
+   ],
+   "predicted": [
+    "mart.shipping_sla.line_total"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.3224334169999565,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-012",
+   "group": "one_hop",
+   "question": "On which dashboards does mart renewal_forecast is_trial appear as-is?",
+   "gold": [
+    "rpt_renewal_forecast"
+   ],
+   "predicted": [
+    "mart.renewal_forecast.is_trial",
+    "rpt_renewal_forecast.mart.renewal_forecast.is_trial"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 5.792716040999949,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-013",
+   "group": "one_hop",
+   "question": "What does job pl_stg_web_payments pull from?",
+   "gold": [
+    "web.payments"
+   ],
+   "predicted": [
+    "web.payments"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 10.012043332999383,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-014",
+   "group": "one_hop",
+   "question": "What does the pl_stg_shop_sessions job pull from?",
+   "gold": [
+    "shop.sessions"
+   ],
+   "predicted": [
+    "stg.shop_sessions",
+    "shop.sessions"
+   ],
+   "precision": 0.5,
+   "recall": 1.0,
+   "f1": 0.6666666666666666,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 8.04941887500081,
+   "error": ""
+  },
+  {
+   "id": "p-one_hop-015",
+   "group": "one_hop",
+   "question": "Source tables for the pl_mart_stock_cover job?",
+   "gold": [
+    "core.fct_inventory"
+   ],
+   "predicted": [
+    "core.fct_inventory",
+    "core.dim_customer"
+   ],
+   "precision": 0.5,
+   "recall": 1.0,
+   "f1": 0.6666666666666666,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.8213860420000856,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-001",
+   "group": "multi_hop",
+   "question": "I'm about to rename product id in billing order items. Any dashboards I should worry about?",
+   "gold": [
+    "rpt_daily_sales_flash",
+    "rpt_executive_summary",
+    "rpt_monthly_recurring_revenue",
+    "rpt_payments_health",
+    "rpt_stock_cover",
+    "rpt_top_products"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.9295324579998123,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-002",
+   "group": "multi_hop",
+   "question": "Downstream dashboards for support reviews review_id?",
+   "gold": [
+    "rpt_refund_monitor",
+    "rpt_revenue_overview"
+   ],
+   "predicted": [
+    "pl_stg_support_reviews.review_id"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.160853916000633,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-003",
+   "group": "multi_hop",
+   "question": "What breaks in reporting if we drop mkt.order_items's line_discount field?",
+   "gold": [
+    "rpt_headcount_summary",
+    "rpt_lead_conversion",
+    "rpt_review_sentiment",
+    "rpt_supplier_scorecard",
+    "rpt_warehouse_utilisation"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.888828250000188,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-004",
+   "group": "multi_hop",
+   "question": "What upstream systems is the stock cover dashboard sourced from?",
+   "gold": [
+    "billing",
+    "erp",
+    "mkt",
+    "web",
+    "wms"
+   ],
+   "predicted": [
+    "mart.stock_cover",
+    "core.fct_leads",
+    "shop"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.398673624999901,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-005",
+   "group": "multi_hop",
+   "question": "What upstream systems is warehouse utilisation sourced from?",
+   "gold": [
+    "billing",
+    "crm",
+    "erp",
+    "mkt",
+    "support",
+    "web"
+   ],
+   "predicted": [
+    "mart.supplier_scorecard",
+    "mart.revenue_monthly"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 2.5746724169994195,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-006",
+   "group": "multi_hop",
+   "question": "Trace regional performance to the operational systems behind it.",
+   "gold": [
+    "erp",
+    "mkt",
+    "shop",
+    "support",
+    "web"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.852947000000313,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-007",
+   "group": "multi_hop",
+   "question": "Everything that's derived from the wms products table, at any depth - which tables?",
+   "gold": [
+    "core.dim_product",
+    "mart.product_ranking",
+    "stg.wms_products"
+   ],
+   "predicted": [
+    "stg.wms_products",
+    "wms.products",
+    "wms.inventory",
+    "wms.campaigns",
+    "stg.wms_sessions",
+    "wms.employees"
+   ],
+   "precision": 0.16666666666666666,
+   "recall": 0.3333333333333333,
+   "f1": 0.2222222222222222,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.346846708000157,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-008",
+   "group": "multi_hop",
+   "question": "Blast radius of the shop employees table in terms of tables?",
+   "gold": [
+    "core.dim_employee",
+    "mart.headcount",
+    "stg.shop_employees"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.46261045799929,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-009",
+   "group": "multi_hop",
+   "question": "Everything that's derived from stg.wms_products, at any depth - which tables?",
+   "gold": [
+    "core.dim_product",
+    "mart.product_ranking"
+   ],
+   "predicted": [
+    "stg.wms_products",
+    "pl_stg_wms_products",
+    "wms.products"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.825410333000036,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-010",
+   "group": "multi_hop",
+   "question": "Who needs a heads-up about changes to shop.campaigns's end_date field?",
+   "gold": [
+    "Arjun Mehta",
+    "Asha Verma",
+    "Hannah Schmidt",
+    "Kwame Mensah",
+    "Lucas Ferreira",
+    "Omar Haddad",
+    "Priya Nair",
+    "Sofia Romano"
+   ],
+   "predicted": [
+    "Priya Nair",
+    "Lucas Ferreira"
+   ],
+   "precision": 1.0,
+   "recall": 0.25,
+   "f1": 0.4,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.390062458000102,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-011",
+   "group": "multi_hop",
+   "question": "Who needs a heads-up about changes to crm.suppliers's supplier_id field?",
+   "gold": [
+    "Arjun Mehta",
+    "Asha Verma",
+    "Daniel Okafor",
+    "Hannah Schmidt",
+    "Kwame Mensah",
+    "Lucas Ferreira",
+    "Omar Haddad",
+    "Priya Nair",
+    "Sofia Romano",
+    "Tomasz Kowalski"
+   ],
+   "predicted": [
+    "Hannah Schmidt",
+    "Daniel Okafor"
+   ],
+   "precision": 1.0,
+   "recall": 0.2,
+   "f1": 0.33333333333333337,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.714645957999892,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-012",
+   "group": "multi_hop",
+   "question": "What raw fields ultimately feed mart.payment_health.va_amount?",
+   "gold": [
+    "billing.invoices.vat_amount"
+   ],
+   "predicted": [
+    "mart.cash_collected.method",
+    "core.fct_payments.vat_amount"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.6194641249994675,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-013",
+   "group": "multi_hop",
+   "question": "What raw fields ultimately feed mart.invoice_ageing.issuedon?",
+   "gold": [
+    "billing.invoices.issued_on",
+    "mkt.invoices.issued_on"
+   ],
+   "predicted": [
+    "core.fct_invoices.issued_on",
+    "core.fct_collections.issued_on"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.587177999999767,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-014",
+   "group": "multi_hop",
+   "question": "What has to run before our Finance Close Pack board is fresh?",
+   "gold": [
+    "pl_core_fct_refunds",
+    "pl_core_fct_tickets",
+    "pl_mart_returns_rate",
+    "pl_mart_support_csat",
+    "pl_stg_billing_refunds",
+    "pl_stg_mkt_refunds",
+    "pl_stg_support_suppliers"
+   ],
+   "predicted": [
+    "mart.renewal_forecast",
+    "mart.stock_cover"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.048891708000156,
+   "error": ""
+  },
+  {
+   "id": "p-multi_hop-015",
+   "group": "multi_hop",
+   "question": "What has to run before our New Customer Cohorts board is fresh?",
+   "gold": [
+    "pl_core_dim_account",
+    "pl_core_dim_campaign",
+    "pl_core_dim_supplier",
+    "pl_core_fct_collections",
+    "pl_core_fct_spend",
+    "pl_mart_account_health",
+    "pl_mart_campaign_roi",
+    "pl_stg_billing_accounts",
+    "pl_stg_billing_invoices",
+    "pl_stg_crm_suppliers",
+    "pl_stg_mkt_accounts",
+    "pl_stg_mkt_invoices",
+    "pl_stg_shop_campaigns",
+    "pl_stg_support_suppliers",
+    "pl_stg_wms_campaigns"
+   ],
+   "predicted": [
+    "mart.account_health",
+    "mart.campaign_roi"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.243654666999646,
+   "error": ""
+  },
+  {
+   "id": "p-negative-001",
+   "group": "negative",
+   "question": "What breaks in reporting if we drop erp leads legacy_flag?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.006921291999788,
+   "error": ""
+  },
+  {
+   "id": "p-negative-002",
+   "group": "negative",
+   "question": "I'm about to rename wms.sessions's legacy_flag field. Any dashboards I should worry about?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 2.789174874999844,
+   "error": ""
+  },
+  {
+   "id": "p-negative-003",
+   "group": "negative",
+   "question": "Downstream dashboards for shop products tmp_notes?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 2.8657958750000034,
+   "error": ""
+  },
+  {
+   "id": "p-negative-004",
+   "group": "negative",
+   "question": "What breaks in reporting if we drop mkt.order_items.legay_flag?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.879806791000192,
+   "error": ""
+  },
+  {
+   "id": "p-negative-005",
+   "group": "negative",
+   "question": "I'm about to rename shop employees office. Any dashboards I should worry about?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.4734529580000526,
+   "error": ""
+  },
+  {
+   "id": "p-negative-006",
+   "group": "negative",
+   "question": "I'm about to rename the started_at field on wms.sessions. Any dashboards I should worry about?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 2.5148605829999724,
+   "error": ""
+  },
+  {
+   "id": "p-negative-007",
+   "group": "negative",
+   "question": "What breaks in reporting if we drop web.addresses's postal_code field?",
+   "gold": [],
+   "predicted": [
+    "web.stg.web_addresses.postal_code",
+    "erp.stg.erp_addresses.postal_code"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.44216733399935,
+   "error": ""
+  },
+  {
+   "id": "p-negative-008",
+   "group": "negative",
+   "question": "I'm about to rename wms.campaigns's updated_at field. Any dashboards I should worry about?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.405634667000413,
+   "error": ""
+  },
+  {
+   "id": "p-negative-009",
+   "group": "negative",
+   "question": "Is row hash in stg erp leads consumed anywhere?",
+   "gold": [],
+   "predicted": [
+    "stg.erp_leads.row_hash",
+    "pl_stg_erp_leads.row_hash"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 5.710063208000065,
+   "error": ""
+  },
+  {
+   "id": "p-negative-010",
+   "group": "negative",
+   "question": "Anything using stg.wms_products.row_hsh?",
+   "gold": [],
+   "predicted": [
+    "stg.wms_products.row_hash"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 4.326706249999916,
+   "error": ""
+  },
+  {
+   "id": "p-negative-011",
+   "group": "negative",
+   "question": "Is stg.erp_shipments.shipent_id consumed anywhere?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.921291665999888,
+   "error": ""
+  },
+  {
+   "id": "p-negative-012",
+   "group": "negative",
+   "question": "Anything using stg support_reviews stars?",
+   "gold": [],
+   "predicted": [
+    "stg.support_reviews.stars",
+    "pl_stg_support_reviews.stars"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.6632841659993574,
+   "error": ""
+  },
+  {
+   "id": "p-negative-013",
+   "group": "negative",
+   "question": "Where is the page_views field on stg.wms_sessions surfaced to users with no extra transformation?",
+   "gold": [],
+   "predicted": [
+    "stg.wms_sessions.page_views"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.8312657090000357,
+   "error": ""
+  },
+  {
+   "id": "p-negative-014",
+   "group": "negative",
+   "question": "Where is stg.web_customers's full_name field surfaced to users with no extra transformation?",
+   "gold": [],
+   "predicted": [
+    "core.dim_customer.full_name"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 3.777328499999385,
+   "error": ""
+  },
+  {
+   "id": "p-negative-015",
+   "group": "negative",
+   "question": "Where is row hash in stg mkt order items surfaced to users with no extra transformation?",
+   "gold": [],
+   "predicted": [
+    "stg.mkt_order_items.row_hash"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": null,
+   "seconds": 5.20897474999947,
+   "error": ""
+  }
+ ]
+}

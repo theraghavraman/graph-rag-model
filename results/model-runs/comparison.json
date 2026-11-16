@@ -1,0 +1,306 @@
+{
+  "overview": [
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "graph-llm",
+      "set": "questions",
+      "questions": 120,
+      "exact_count": 69,
+      "exact_rate": 0.575,
+      "macro_f1": 0.5828703703703704,
+      "abstentions": 28,
+      "negative_false_positives": 1,
+      "negative_questions": 30,
+      "median_seconds": 1.286473770999919
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "bm25-llm",
+      "set": "questions",
+      "questions": 120,
+      "exact_count": 40,
+      "exact_rate": 0.3333333333333333,
+      "macro_f1": 0.4671535798509483,
+      "abstentions": 0,
+      "negative_false_positives": 16,
+      "negative_questions": 30,
+      "median_seconds": 7.690024895499846
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "vector-llm",
+      "set": "questions",
+      "questions": 120,
+      "exact_count": 40,
+      "exact_rate": 0.3333333333333333,
+      "macro_f1": 0.4580235273985274,
+      "abstentions": 0,
+      "negative_false_positives": 16,
+      "negative_questions": 30,
+      "median_seconds": 8.353424270499545
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "graph-llm",
+      "set": "questions_paraphrased",
+      "questions": 60,
+      "exact_count": 32,
+      "exact_rate": 0.5333333333333333,
+      "macro_f1": 0.5444444444444444,
+      "abstentions": 13,
+      "negative_false_positives": 3,
+      "negative_questions": 15,
+      "median_seconds": 1.862247165999861
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "bm25-llm",
+      "set": "questions_paraphrased",
+      "questions": 60,
+      "exact_count": 17,
+      "exact_rate": 0.2833333333333333,
+      "macro_f1": 0.3873148148148148,
+      "abstentions": 0,
+      "negative_false_positives": 7,
+      "negative_questions": 15,
+      "median_seconds": 8.78651635399956
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "vector-llm",
+      "set": "questions_paraphrased",
+      "questions": 60,
+      "exact_count": 21,
+      "exact_rate": 0.35,
+      "macro_f1": 0.43074074074074076,
+      "abstentions": 0,
+      "negative_false_positives": 7,
+      "negative_questions": 15,
+      "median_seconds": 4.299686062499859
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "graph-llm",
+      "set": "questions",
+      "questions": 120,
+      "exact_count": 79,
+      "exact_rate": 0.6583333333333333,
+      "macro_f1": 0.6900925925925926,
+      "abstentions": 8,
+      "negative_false_positives": 2,
+      "negative_questions": 30,
+      "median_seconds": 0.6933570004998728
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "bm25-llm",
+      "set": "questions",
+      "questions": 120,
+      "exact_count": 23,
+      "exact_rate": 0.19166666666666668,
+      "macro_f1": 0.3001605339105339,
+      "abstentions": 0,
+      "negative_false_positives": 30,
+      "negative_questions": 30,
+      "median_seconds": 3.00438222899993
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "vector-llm",
+      "set": "questions",
+      "questions": 120,
+      "exact_count": 23,
+      "exact_rate": 0.19166666666666668,
+      "macro_f1": 0.26375457875457875,
+      "abstentions": 0,
+      "negative_false_positives": 30,
+      "negative_questions": 30,
+      "median_seconds": 2.3569609999999557
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "graph-llm",
+      "set": "questions_paraphrased",
+      "questions": 60,
+      "exact_count": 43,
+      "exact_rate": 0.7166666666666667,
+      "macro_f1": 0.7411111111111112,
+      "abstentions": 2,
+      "negative_false_positives": 2,
+      "negative_questions": 15,
+      "median_seconds": 0.9439229790000354
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "bm25-llm",
+      "set": "questions_paraphrased",
+      "questions": 60,
+      "exact_count": 12,
+      "exact_rate": 0.2,
+      "macro_f1": 0.2531481481481481,
+      "abstentions": 0,
+      "negative_false_positives": 15,
+      "negative_questions": 15,
+      "median_seconds": 3.4149783964999187
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "vector-llm",
+      "set": "questions_paraphrased",
+      "questions": 60,
+      "exact_count": 15,
+      "exact_rate": 0.25,
+      "macro_f1": 0.30123015873015874,
+      "abstentions": 0,
+      "negative_false_positives": 15,
+      "negative_questions": 15,
+      "median_seconds": 2.1897631874999206
+    }
+  ],
+  "response_checks": [
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "graph-llm",
+      "set": "questions",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 153
+      },
+      "prediction_errors": 2,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "graph-llm",
+      "set": "questions_paraphrased",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 76
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "bm25-llm",
+      "set": "questions",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 120
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "bm25-llm",
+      "set": "questions_paraphrased",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 60
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "vector-llm",
+      "set": "questions",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 120
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "llama-3.2-3b-instruct",
+      "system": "vector-llm",
+      "set": "questions_paraphrased",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 60
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "graph-llm",
+      "set": "questions",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 128
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "graph-llm",
+      "set": "questions_paraphrased",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 62
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "bm25-llm",
+      "set": "questions",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 120
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "bm25-llm",
+      "set": "questions_paraphrased",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 60
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "vector-llm",
+      "set": "questions",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 120
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    },
+    {
+      "model": "qwen2.5-coder-1.5b-instruct-mlx",
+      "system": "vector-llm",
+      "set": "questions_paraphrased",
+      "request_errors": 0,
+      "finish_reasons": {
+        "stop": 60
+      },
+      "prediction_errors": 0,
+      "malformed_reader_json": 0,
+      "invalid_reader_answer_list": 0
+    }
+  ]
+}

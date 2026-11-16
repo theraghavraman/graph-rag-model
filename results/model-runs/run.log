@@ -1,0 +1,121 @@
+llama-3.2-3b-instruct graph-llm__questions 10/120 exact=8 abstained=2
+llama-3.2-3b-instruct graph-llm__questions 20/120 exact=17 abstained=3
+llama-3.2-3b-instruct graph-llm__questions 30/120 exact=18 abstained=12
+llama-3.2-3b-instruct graph-llm__questions 40/120 exact=25 abstained=12
+llama-3.2-3b-instruct graph-llm__questions 50/120 exact=32 abstained=13
+llama-3.2-3b-instruct graph-llm__questions 60/120 exact=35 abstained=19
+llama-3.2-3b-instruct graph-llm__questions 70/120 exact=40 abstained=20
+llama-3.2-3b-instruct graph-llm__questions 80/120 exact=44 abstained=23
+llama-3.2-3b-instruct graph-llm__questions 90/120 exact=45 abstained=23
+llama-3.2-3b-instruct graph-llm__questions 100/120 exact=54 abstained=23
+llama-3.2-3b-instruct graph-llm__questions 110/120 exact=61 abstained=26
+llama-3.2-3b-instruct graph-llm__questions 120/120 exact=69 abstained=28
+Saved results/model-runs/llama-3.2-3b-instruct/graph-llm__questions.json
+llama-3.2-3b-instruct graph-llm__questions_paraphrased 10/60 exact=9 abstained=1
+llama-3.2-3b-instruct graph-llm__questions_paraphrased 20/60 exact=13 abstained=6
+llama-3.2-3b-instruct graph-llm__questions_paraphrased 30/60 exact=17 abstained=8
+llama-3.2-3b-instruct graph-llm__questions_paraphrased 40/60 exact=23 abstained=9
+llama-3.2-3b-instruct graph-llm__questions_paraphrased 50/60 exact=28 abstained=10
+llama-3.2-3b-instruct graph-llm__questions_paraphrased 60/60 exact=32 abstained=13
+Saved results/model-runs/llama-3.2-3b-instruct/graph-llm__questions_paraphrased.json
+llama-3.2-3b-instruct bm25-llm__questions 10/120 exact=9 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 20/120 exact=14 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 30/120 exact=20 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 40/120 exact=22 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 50/120 exact=24 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 60/120 exact=26 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 70/120 exact=26 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 80/120 exact=26 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 90/120 exact=26 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 100/120 exact=33 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 110/120 exact=37 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions 120/120 exact=40 abstained=0
+Saved results/model-runs/llama-3.2-3b-instruct/bm25-llm__questions.json
+llama-3.2-3b-instruct bm25-llm__questions_paraphrased 10/60 exact=8 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions_paraphrased 20/60 exact=9 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions_paraphrased 30/60 exact=9 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions_paraphrased 40/60 exact=9 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions_paraphrased 50/60 exact=13 abstained=0
+llama-3.2-3b-instruct bm25-llm__questions_paraphrased 60/60 exact=17 abstained=0
+Saved results/model-runs/llama-3.2-3b-instruct/bm25-llm__questions_paraphrased.json
+llama-3.2-3b-instruct vector-llm__questions 10/120 exact=10 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 20/120 exact=15 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 30/120 exact=20 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 40/120 exact=21 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 50/120 exact=24 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 60/120 exact=26 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 70/120 exact=26 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 80/120 exact=26 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 90/120 exact=26 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 100/120 exact=33 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 110/120 exact=34 abstained=0
+llama-3.2-3b-instruct vector-llm__questions 120/120 exact=40 abstained=0
+Saved results/model-runs/llama-3.2-3b-instruct/vector-llm__questions.json
+llama-3.2-3b-instruct vector-llm__questions_paraphrased 10/60 exact=7 abstained=0
+llama-3.2-3b-instruct vector-llm__questions_paraphrased 20/60 exact=11 abstained=0
+llama-3.2-3b-instruct vector-llm__questions_paraphrased 30/60 exact=13 abstained=0
+llama-3.2-3b-instruct vector-llm__questions_paraphrased 40/60 exact=13 abstained=0
+llama-3.2-3b-instruct vector-llm__questions_paraphrased 50/60 exact=18 abstained=0
+llama-3.2-3b-instruct vector-llm__questions_paraphrased 60/60 exact=21 abstained=0
+Saved results/model-runs/llama-3.2-3b-instruct/vector-llm__questions_paraphrased.json
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 10/120 exact=10 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 20/120 exact=20 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 30/120 exact=24 abstained=4
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 40/120 exact=28 abstained=4
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 50/120 exact=31 abstained=4
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 60/120 exact=33 abstained=6
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 70/120 exact=43 abstained=6
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 80/120 exact=53 abstained=6
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 90/120 exact=53 abstained=6
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 100/120 exact=62 abstained=7
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 110/120 exact=71 abstained=8
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions 120/120 exact=79 abstained=8
+Saved results/model-runs/qwen2.5-coder-1.5b-instruct-mlx/graph-llm__questions.json
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions_paraphrased 10/60 exact=9 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions_paraphrased 20/60 exact=15 abstained=1
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions_paraphrased 30/60 exact=19 abstained=1
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions_paraphrased 40/60 exact=29 abstained=1
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions_paraphrased 50/60 exact=35 abstained=2
+qwen2.5-coder-1.5b-instruct-mlx graph-llm__questions_paraphrased 60/60 exact=43 abstained=2
+Saved results/model-runs/qwen2.5-coder-1.5b-instruct-mlx/graph-llm__questions_paraphrased.json
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 10/120 exact=10 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 20/120 exact=16 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 30/120 exact=19 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 40/120 exact=20 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 50/120 exact=20 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 60/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 70/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 80/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 90/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 100/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 110/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions 120/120 exact=23 abstained=0
+Saved results/model-runs/qwen2.5-coder-1.5b-instruct-mlx/bm25-llm__questions.json
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions_paraphrased 10/60 exact=9 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions_paraphrased 20/60 exact=11 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions_paraphrased 30/60 exact=12 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions_paraphrased 40/60 exact=12 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions_paraphrased 50/60 exact=12 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx bm25-llm__questions_paraphrased 60/60 exact=12 abstained=0
+Saved results/model-runs/qwen2.5-coder-1.5b-instruct-mlx/bm25-llm__questions_paraphrased.json
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 10/120 exact=10 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 20/120 exact=17 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 30/120 exact=18 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 40/120 exact=20 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 50/120 exact=21 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 60/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 70/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 80/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 90/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 100/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 110/120 exact=23 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions 120/120 exact=23 abstained=0
+Saved results/model-runs/qwen2.5-coder-1.5b-instruct-mlx/vector-llm__questions.json
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions_paraphrased 10/60 exact=8 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions_paraphrased 20/60 exact=11 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions_paraphrased 30/60 exact=15 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions_paraphrased 40/60 exact=15 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions_paraphrased 50/60 exact=15 abstained=0
+qwen2.5-coder-1.5b-instruct-mlx vector-llm__questions_paraphrased 60/60 exact=15 abstained=0
+Saved results/model-runs/qwen2.5-coder-1.5b-instruct-mlx/vector-llm__questions_paraphrased.json
+All model runs and retrieval coverage measurements completed.

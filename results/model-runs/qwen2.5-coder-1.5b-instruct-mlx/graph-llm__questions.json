@@ -1,0 +1,2584 @@
+{
+ "meta": {
+  "system": "graph-llm",
+  "questions": "questions",
+  "model": "qwen2.5-coder-1.5b-instruct-mlx",
+  "embed_model": null,
+  "config_sha256": "0cb3672a18d2306e210a4a5020dde76a6c1297d9422208684f0267ee401b63eb",
+  "temperature": 0,
+  "k": 8,
+  "max_chars": 2500,
+  "embeddings_cached": false,
+  "trace": "graph-llm__questions.trace.jsonl",
+  "checkpoint": "graph-llm__questions.checkpoint.jsonl",
+  "model_calls": 128,
+  "prompt_tokens": 74233,
+  "completion_tokens": 3705,
+  "ran_at": "2026-11-16"
+ },
+ "summary": {
+  "overall": {
+   "questions": 120,
+   "precision": 0.681,
+   "recall": 0.717,
+   "f1": 0.69,
+   "exact": 0.658,
+   "abstained": 0.067,
+   "median_ms": 693.4,
+   "plan_correct": 0.483,
+   "false_positive": 0.067
+  },
+  "lookup": {
+   "questions": 30,
+   "precision": 0.8,
+   "recall": 0.8,
+   "f1": 0.8,
+   "exact": 0.8,
+   "abstained": 0.133,
+   "median_ms": 396.5,
+   "plan_correct": 0.7
+  },
+  "one_hop": {
+   "questions": 30,
+   "precision": 0.39,
+   "recall": 0.533,
+   "f1": 0.427,
+   "exact": 0.3,
+   "abstained": 0.067,
+   "median_ms": 708.8,
+   "plan_correct": 0.1
+  },
+  "multi_hop": {
+   "questions": 30,
+   "precision": 0.667,
+   "recall": 0.667,
+   "f1": 0.667,
+   "exact": 0.667,
+   "abstained": 0.0,
+   "median_ms": 685.7,
+   "plan_correct": 0.667
+  },
+  "negative": {
+   "questions": 30,
+   "precision": 0.867,
+   "recall": 0.867,
+   "f1": 0.867,
+   "exact": 0.867,
+   "abstained": 0.067,
+   "median_ms": 1376.7,
+   "plan_correct": 0.467,
+   "false_positive": 0.067
+  }
+ },
+ "rows": [
+  {
+   "id": "lookup-001",
+   "group": "lookup",
+   "question": "Which person owns table mart.product_margin?",
+   "gold": [
+    "Hannah Schmidt"
+   ],
+   "predicted": [
+    "Hannah Schmidt"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 10.048757665999801,
+   "error": ""
+  },
+  {
+   "id": "lookup-002",
+   "group": "lookup",
+   "question": "Who is responsible for mart.cash_collected?",
+   "gold": [
+    "Kwame Mensah"
+   ],
+   "predicted": [
+    "Kwame Mensah"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.3125263330002781,
+   "error": ""
+  },
+  {
+   "id": "lookup-003",
+   "group": "lookup",
+   "question": "Which person owns table mart.supplier_scorecard?",
+   "gold": [
+    "Arjun Mehta"
+   ],
+   "predicted": [
+    "Arjun Mehta"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.306647124999472,
+   "error": ""
+  },
+  {
+   "id": "lookup-004",
+   "group": "lookup",
+   "question": "Who owns the stg.erp_leads table?",
+   "gold": [
+    "Omar Haddad"
+   ],
+   "predicted": [
+    "Omar Haddad"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.30731041700073547,
+   "error": ""
+  },
+  {
+   "id": "lookup-005",
+   "group": "lookup",
+   "question": "Who is responsible for mart.subscription_mrr?",
+   "gold": [
+    "Priya Nair"
+   ],
+   "predicted": [
+    "Priya Nair"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.2909148749995438,
+   "error": ""
+  },
+  {
+   "id": "lookup-006",
+   "group": "lookup",
+   "question": "Who do I contact about the Review Sentiment report?",
+   "gold": [
+    "Sofia Romano"
+   ],
+   "predicted": [
+    "Sofia Romano"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.33076100000016595,
+   "error": ""
+  },
+  {
+   "id": "lookup-007",
+   "group": "lookup",
+   "question": "Who owns the \"Returns Rate\" dashboard?",
+   "gold": [
+    "Hannah Schmidt"
+   ],
+   "predicted": [
+    "Hannah Schmidt"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.3140583340000376,
+   "error": ""
+  },
+  {
+   "id": "lookup-008",
+   "group": "lookup",
+   "question": "Who owns report rpt_credit_exposure?",
+   "gold": [
+    "Ingrid Larsen"
+   ],
+   "predicted": [
+    "Ingrid Larsen"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.30060970799968345,
+   "error": ""
+  },
+  {
+   "id": "lookup-009",
+   "group": "lookup",
+   "question": "Who owns the \"Revenue Overview\" dashboard?",
+   "gold": [
+    "Daniel Okafor"
+   ],
+   "predicted": [
+    "Daniel Okafor"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.3285654169994814,
+   "error": ""
+  },
+  {
+   "id": "lookup-010",
+   "group": "lookup",
+   "question": "Who owns Operations Weekly?",
+   "gold": [
+    "Daniel Okafor"
+   ],
+   "predicted": [
+    "Daniel Okafor"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.3160786250000456,
+   "error": ""
+  },
+  {
+   "id": "lookup-011",
+   "group": "lookup",
+   "question": "Who owns the pipeline pl_core_fct_pipeline?",
+   "gold": [
+    "Daniel Okafor"
+   ],
+   "predicted": [
+    "Daniel Okafor"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.3960313749994384,
+   "error": ""
+  },
+  {
+   "id": "lookup-012",
+   "group": "lookup",
+   "question": "Who maintains pl_mart_carrier_scorecard?",
+   "gold": [
+    "Lucas Ferreira"
+   ],
+   "predicted": [
+    "Lucas Ferreira"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.44431100000019796,
+   "error": ""
+  },
+  {
+   "id": "lookup-013",
+   "group": "lookup",
+   "question": "Who owns the pipeline pl_core_bridge_order_shipment?",
+   "gold": [
+    "Lucas Ferreira"
+   ],
+   "predicted": [
+    "Lucas Ferreira"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.44583858299938584,
+   "error": ""
+  },
+  {
+   "id": "lookup-014",
+   "group": "lookup",
+   "question": "Who owns the pipeline pl_mart_web_funnel?",
+   "gold": [
+    "Ingrid Larsen"
+   ],
+   "predicted": [
+    "Ingrid Larsen"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.37051762499959295,
+   "error": ""
+  },
+  {
+   "id": "lookup-015",
+   "group": "lookup",
+   "question": "Who maintains pl_core_fct_subscriptions?",
+   "gold": [
+    "Tomasz Kowalski"
+   ],
+   "predicted": [
+    "Tomasz Kowalski"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.38215054200009035,
+   "error": ""
+  },
+  {
+   "id": "lookup-016",
+   "group": "lookup",
+   "question": "Who owns the table that holds core.fct_orders.discount?",
+   "gold": [
+    "Daniel Okafor"
+   ],
+   "predicted": [
+    "Daniel Okafor"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.4344606670001667,
+   "error": ""
+  },
+  {
+   "id": "lookup-017",
+   "group": "lookup",
+   "question": "Who owns the table that holds stg.shop_sessions.visitor_id?",
+   "gold": [
+    "Sofia Romano"
+   ],
+   "predicted": [
+    "Sofia Romano"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.4726465409994489,
+   "error": ""
+  },
+  {
+   "id": "lookup-018",
+   "group": "lookup",
+   "question": "Who owns the table that holds stg.erp_payments.row_hash?",
+   "gold": [
+    "Mei Tanaka"
+   ],
+   "predicted": [
+    "Mei Tanaka"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.46137779200034856,
+   "error": ""
+  },
+  {
+   "id": "lookup-019",
+   "group": "lookup",
+   "question": "Who owns the table that holds erp.addresses.postal_code?",
+   "gold": [
+    "Mei Tanaka"
+   ],
+   "predicted": [
+    "Mei Tanaka"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.43327762499939126,
+   "error": ""
+  },
+  {
+   "id": "lookup-020",
+   "group": "lookup",
+   "question": "Who owns the table that holds column seats of the support.subscriptions table?",
+   "gold": [
+    "Asha Verma"
+   ],
+   "predicted": [
+    "Asha Verma"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5188845409993519,
+   "error": ""
+  },
+  {
+   "id": "lookup-021",
+   "group": "lookup",
+   "question": "List the raw tables delivered by erp.",
+   "gold": [
+    "erp.addresses",
+    "erp.customers",
+    "erp.leads",
+    "erp.payments",
+    "erp.shipments"
+   ],
+   "predicted": [
+    "stg.erp_addresses",
+    "stg.erp_customers",
+    "stg.erp_leads",
+    "stg.erp_payments",
+    "stg.erp_shipments"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.8438810839998041,
+   "error": ""
+  },
+  {
+   "id": "lookup-022",
+   "group": "lookup",
+   "question": "Which tables come from the wms system?",
+   "gold": [
+    "wms.campaigns",
+    "wms.employees",
+    "wms.inventory",
+    "wms.products",
+    "wms.sessions"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": true,
+   "plan_correct": false,
+   "seconds": 1.1310227080002733,
+   "error": ""
+  },
+  {
+   "id": "lookup-023",
+   "group": "lookup",
+   "question": "Which tables come from the crm system?",
+   "gold": [
+    "crm.returns",
+    "crm.reviews",
+    "crm.subscriptions",
+    "crm.suppliers",
+    "crm.tickets"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": true,
+   "plan_correct": false,
+   "seconds": 1.0878764169992792,
+   "error": ""
+  },
+  {
+   "id": "lookup-024",
+   "group": "lookup",
+   "question": "Which tables come from the billing system?",
+   "gold": [
+    "billing.accounts",
+    "billing.invoices",
+    "billing.order_items",
+    "billing.orders",
+    "billing.refunds"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": true,
+   "plan_correct": false,
+   "seconds": 1.0435373330001312,
+   "error": ""
+  },
+  {
+   "id": "lookup-025",
+   "group": "lookup",
+   "question": "Which tables come from the web system?",
+   "gold": [
+    "web.addresses",
+    "web.customers",
+    "web.leads",
+    "web.payments",
+    "web.shipments"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": true,
+   "plan_correct": false,
+   "seconds": 0.9775104170003033,
+   "error": ""
+  },
+  {
+   "id": "lookup-026",
+   "group": "lookup",
+   "question": "List the columns of the stg.mkt_accounts table.",
+   "gold": [
+    "stg.mkt_accounts.account_id",
+    "stg.mkt_accounts.account_name",
+    "stg.mkt_accounts.credit_limit",
+    "stg.mkt_accounts.industry",
+    "stg.mkt_accounts.opened_on",
+    "stg.mkt_accounts.owner_rep",
+    "stg.mkt_accounts.region",
+    "stg.mkt_accounts.row_hash",
+    "stg.mkt_accounts.tier",
+    "stg.mkt_accounts.updated_at"
+   ],
+   "predicted": [
+    "core.dim_account",
+    "core.dim_supplier",
+    "core.fct_pipeline",
+    "mart.account_health"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6633586660000219,
+   "error": ""
+  },
+  {
+   "id": "lookup-027",
+   "group": "lookup",
+   "question": "List the columns of the crm.reviews table.",
+   "gold": [
+    "crm.reviews.customer_id",
+    "crm.reviews.legacy_flag",
+    "crm.reviews.posted_at",
+    "crm.reviews.product_id",
+    "crm.reviews.review_id",
+    "crm.reviews.review_title",
+    "crm.reviews.stars",
+    "crm.reviews.tmp_notes",
+    "crm.reviews.updated_at"
+   ],
+   "predicted": [
+    "crm.reviews.customer_id",
+    "crm.reviews.legacy_flag",
+    "crm.reviews.posted_at",
+    "crm.reviews.product_id",
+    "crm.reviews.review_id",
+    "crm.reviews.review_title",
+    "crm.reviews.stars",
+    "crm.reviews.tmp_notes",
+    "crm.reviews.updated_at"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.3682972919996246,
+   "error": ""
+  },
+  {
+   "id": "lookup-028",
+   "group": "lookup",
+   "question": "What columns does wms.employees have?",
+   "gold": [
+    "wms.employees.department",
+    "wms.employees.display_name",
+    "wms.employees.employee_id",
+    "wms.employees.hired_on",
+    "wms.employees.job_title",
+    "wms.employees.legacy_flag",
+    "wms.employees.manager_id",
+    "wms.employees.office",
+    "wms.employees.tmp_notes",
+    "wms.employees.updated_at"
+   ],
+   "predicted": [
+    "wms.employees.department",
+    "wms.employees.display_name",
+    "wms.employees.employee_id",
+    "wms.employees.hired_on",
+    "wms.employees.job_title",
+    "wms.employees.legacy_flag",
+    "wms.employees.manager_id",
+    "wms.employees.office",
+    "wms.employees.tmp_notes",
+    "wms.employees.updated_at"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.3892867919994387,
+   "error": ""
+  },
+  {
+   "id": "lookup-029",
+   "group": "lookup",
+   "question": "What columns does stg.support_reviews have?",
+   "gold": [
+    "stg.support_reviews.customer_id",
+    "stg.support_reviews.posted_at",
+    "stg.support_reviews.product_id",
+    "stg.support_reviews.review_id",
+    "stg.support_reviews.review_title",
+    "stg.support_reviews.row_hash",
+    "stg.support_reviews.stars",
+    "stg.support_reviews.updated_at"
+   ],
+   "predicted": [
+    "stg.support_reviews.customer_id",
+    "stg.support_reviews.posted_at",
+    "stg.support_reviews.product_id",
+    "stg.support_reviews.review_id",
+    "stg.support_reviews.review_title",
+    "stg.support_reviews.row_hash",
+    "stg.support_reviews.stars",
+    "stg.support_reviews.updated_at"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.3969695830001001,
+   "error": ""
+  },
+  {
+   "id": "lookup-030",
+   "group": "lookup",
+   "question": "What columns does crm.subscriptions have?",
+   "gold": [
+    "crm.subscriptions.account_id",
+    "crm.subscriptions.import_batch",
+    "crm.subscriptions.is_trial",
+    "crm.subscriptions.legacy_flag",
+    "crm.subscriptions.monthly_fee",
+    "crm.subscriptions.plan",
+    "crm.subscriptions.renews_on",
+    "crm.subscriptions.seats",
+    "crm.subscriptions.started_on",
+    "crm.subscriptions.subscription_id",
+    "crm.subscriptions.updated_at"
+   ],
+   "predicted": [
+    "crm.subscriptions.account_id",
+    "crm.subscriptions.import_batch",
+    "crm.subscriptions.is_trial",
+    "crm.subscriptions.legacy_flag",
+    "crm.subscriptions.monthly_fee",
+    "crm.subscriptions.plan",
+    "crm.subscriptions.renews_on",
+    "crm.subscriptions.seats",
+    "crm.subscriptions.started_on",
+    "crm.subscriptions.subscription_id",
+    "crm.subscriptions.updated_at"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.34728245899987087,
+   "error": ""
+  },
+  {
+   "id": "one_hop-001",
+   "group": "one_hop",
+   "question": "Which pipelines read column destination_city of the core.fct_fulfilment table directly?",
+   "gold": [
+    "pl_mart_shipping_sla"
+   ],
+   "predicted": [
+    "pl_mart_shipping_sla"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7870589579997613,
+   "error": ""
+  },
+  {
+   "id": "one_hop-002",
+   "group": "one_hop",
+   "question": "Which jobs take stg.crm_tickets.closed_at as a direct input?",
+   "gold": [
+    "pl_core_fct_tickets"
+   ],
+   "predicted": [
+    "pl_core_fct_tickets"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.9195951249994323,
+   "error": ""
+  },
+  {
+   "id": "one_hop-003",
+   "group": "one_hop",
+   "question": "Which jobs take the closed_at column in crm.tickets as a direct input?",
+   "gold": [
+    "pl_stg_crm_tickets"
+   ],
+   "predicted": [
+    "pl_stg_crm_tickets"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.917605624999851,
+   "error": ""
+  },
+  {
+   "id": "one_hop-004",
+   "group": "one_hop",
+   "question": "Which pipelines read support.returns.updated_at directly?",
+   "gold": [
+    "pl_stg_support_returns"
+   ],
+   "predicted": [
+    "pl_stg_support_returns",
+    "pl_core_fct_tickets",
+    "pl_mart_carrier_scorecard"
+   ],
+   "precision": 0.3333333333333333,
+   "recall": 1.0,
+   "f1": 0.5,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6995532920000187,
+   "error": ""
+  },
+  {
+   "id": "one_hop-005",
+   "group": "one_hop",
+   "question": "Which jobs take core.fct_subscriptions.requested_at as a direct input?",
+   "gold": [
+    "pl_mart_renewal_forecast"
+   ],
+   "predicted": [
+    "pl_mart_renewal_forecast"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.968133792000117,
+   "error": ""
+  },
+  {
+   "id": "one_hop-006",
+   "group": "one_hop",
+   "question": "Which pipelines read column plan of the stg.support_subscriptions table directly?",
+   "gold": [
+    "pl_core_fct_renewals",
+    "pl_core_fct_subscriptions"
+   ],
+   "predicted": [
+    "pl_core_fct_renewals",
+    "pl_core_fct_subscriptions",
+    "pl_mart_customer_churn",
+    "pl_mart_renewal_forecast",
+    "pl_mart_subscription_mrr",
+    "pl_mart_support_backlog"
+   ],
+   "precision": 0.3333333333333333,
+   "recall": 1.0,
+   "f1": 0.5,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7830879999992248,
+   "error": ""
+  },
+  {
+   "id": "one_hop-007",
+   "group": "one_hop",
+   "question": "Which columns are computed directly from the vat_amount column in billing.invoices?",
+   "gold": [
+    "stg.billing_invoices.row_hash",
+    "stg.billing_invoices.vat_amount"
+   ],
+   "predicted": [
+    "stg.billing_invoices.row_hash",
+    "stg.billing_invoices.vat_amount",
+    "core.fct_collections.vat_amount",
+    "core.fct_invoices.vat_amount",
+    "mart.account_health.sum_net_amount",
+    "mart.invoice_ageing.vat_amount",
+    "mart.payment_health.vat_amount"
+   ],
+   "precision": 0.2857142857142857,
+   "recall": 1.0,
+   "f1": 0.4444444444444445,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7562991670001793,
+   "error": ""
+  },
+  {
+   "id": "one_hop-008",
+   "group": "one_hop",
+   "question": "Which columns are computed directly from stg.mkt_refunds.approved_by?",
+   "gold": [
+    "core.fct_refunds.approved_by"
+   ],
+   "predicted": [
+    "core.fct_refunds.approved_by",
+    "mart.carrier_scorecard.approved_by"
+   ],
+   "precision": 0.5,
+   "recall": 1.0,
+   "f1": 0.6666666666666666,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7937317080004505,
+   "error": ""
+  },
+  {
+   "id": "one_hop-009",
+   "group": "one_hop",
+   "question": "Which columns are computed directly from wms.products.updated_at?",
+   "gold": [
+    "stg.wms_products.updated_at"
+   ],
+   "predicted": [
+    "stg.wms_products.updated_at",
+    "core.dim_product.updated_at",
+    "mart.product_ranking.updated_at"
+   ],
+   "precision": 0.3333333333333333,
+   "recall": 1.0,
+   "f1": 0.5,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6139726669998709,
+   "error": ""
+  },
+  {
+   "id": "one_hop-010",
+   "group": "one_hop",
+   "question": "What is derived straight from the account_id column in mkt.accounts, one step downstream?",
+   "gold": [
+    "stg.mkt_accounts.account_id",
+    "stg.mkt_accounts.row_hash"
+   ],
+   "predicted": [
+    "stg.mkt_accounts.account_id",
+    "stg.mkt_accounts.row_hash",
+    "core.fct_pipeline.account_id"
+   ],
+   "precision": 0.6666666666666666,
+   "recall": 1.0,
+   "f1": 0.8,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6932205840003007,
+   "error": ""
+  },
+  {
+   "id": "one_hop-011",
+   "group": "one_hop",
+   "question": "What is derived straight from support.suppliers.onboarded_on, one step downstream?",
+   "gold": [
+    "stg.support_suppliers.onboarded_on"
+   ],
+   "predicted": [
+    "stg.support_suppliers.onboarded_on",
+    "core.dim_supplier.onboarded_on",
+    "core.fct_tickets.onboarded_on",
+    "mart.carrier_scorecard.onboarded_on"
+   ],
+   "precision": 0.25,
+   "recall": 1.0,
+   "f1": 0.4,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7180774160005967,
+   "error": ""
+  },
+  {
+   "id": "one_hop-012",
+   "group": "one_hop",
+   "question": "What is derived straight from stg.erp_customers.is_active, one step downstream?",
+   "gold": [
+    "core.bridge_customer_account.is_active"
+   ],
+   "predicted": [
+    "core.bridge_customer_account.is_active"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7330056669998157,
+   "error": ""
+  },
+  {
+   "id": "one_hop-013",
+   "group": "one_hop",
+   "question": "Which columns is column min_subtotal of the mart.product_margin table computed from directly?",
+   "gold": [
+    "core.fct_inventory.subtotal"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6935167090005052,
+   "error": ""
+  },
+  {
+   "id": "one_hop-014",
+   "group": "one_hop",
+   "question": "What are the immediate inputs of the is_refunded column in stg.erp_payments?",
+   "gold": [
+    "erp.payments.is_refunded"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7220540000007531,
+   "error": ""
+  },
+  {
+   "id": "one_hop-015",
+   "group": "one_hop",
+   "question": "Which columns is core.fct_stock_moves.address_id computed from directly?",
+   "gold": [
+    "stg.erp_addresses.address_id"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6957732079999914,
+   "error": ""
+  },
+  {
+   "id": "one_hop-016",
+   "group": "one_hop",
+   "question": "What are the immediate inputs of stg.support_subscriptions.plan?",
+   "gold": [
+    "support.subscriptions.plan"
+   ],
+   "predicted": [
+    "core.fct_renewals.plan",
+    "core.fct_subscriptions.plan",
+    "mart.customer_churn.plan",
+    "mart.renewal_forecast.plan",
+    "mart.subscription_mrr.plan",
+    "mart.support_backlog.plan"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6811038750001899,
+   "error": ""
+  },
+  {
+   "id": "one_hop-017",
+   "group": "one_hop",
+   "question": "Which columns is column company of the core.dim_campaign table computed from directly?",
+   "gold": [
+    "stg.web_leads.company"
+   ],
+   "predicted": [
+    "mart.product_ranking.company"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6456589580002401,
+   "error": ""
+  },
+  {
+   "id": "one_hop-018",
+   "group": "one_hop",
+   "question": "What are the immediate inputs of stg.erp_shipments.shipped_at?",
+   "gold": [
+    "erp.shipments.shipped_at"
+   ],
+   "predicted": [
+    "core.bridge_order_shipment.shipped_at",
+    "mart.sales_by_region.shipped_at",
+    "mart.supplier_scorecard.shipped_at"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7235338330001468,
+   "error": ""
+  },
+  {
+   "id": "one_hop-019",
+   "group": "one_hop",
+   "question": "Which reports display mart.product_ranking.company directly?",
+   "gold": [
+    "rpt_subscription_seats"
+   ],
+   "predicted": [
+    "rpt_subscription_seats"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.5847088750006151,
+   "error": ""
+  },
+  {
+   "id": "one_hop-020",
+   "group": "one_hop",
+   "question": "Which reports display mart.subscription_mrr.renews_on directly?",
+   "gold": [
+    "rpt_credit_exposure",
+    "rpt_headcount_summary",
+    "rpt_monthly_recurring_revenue"
+   ],
+   "predicted": [
+    "rpt_credit_exposure",
+    "rpt_headcount_summary",
+    "rpt_monthly_recurring_revenue"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6817875420001656,
+   "error": ""
+  },
+  {
+   "id": "one_hop-021",
+   "group": "one_hop",
+   "question": "Which dashboards show mart.sales_by_region.destination_city?",
+   "gold": [
+    "rpt_customer_lifetime_value",
+    "rpt_marketing_weekly",
+    "rpt_sales_pipeline"
+   ],
+   "predicted": [
+    "rpt_customer_lifetime_value",
+    "rpt_marketing_weekly",
+    "rpt_sales_pipeline"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.5998528749996694,
+   "error": ""
+  },
+  {
+   "id": "one_hop-022",
+   "group": "one_hop",
+   "question": "Which dashboards show mart.revenue_monthly.customer_id?",
+   "gold": [
+    "rpt_monthly_recurring_revenue",
+    "rpt_revenue_overview",
+    "rpt_warehouse_utilisation"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": true,
+   "plan_correct": false,
+   "seconds": 0.9818739170004847,
+   "error": ""
+  },
+  {
+   "id": "one_hop-023",
+   "group": "one_hop",
+   "question": "Which reports display mart.customer_ltv.email directly?",
+   "gold": [
+    "rpt_credit_exposure",
+    "rpt_customer_lifetime_value",
+    "rpt_invoice_ageing"
+   ],
+   "predicted": [
+    "rpt_credit_exposure",
+    "rpt_customer_lifetime_value",
+    "rpt_invoice_ageing"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.587651625000035,
+   "error": ""
+  },
+  {
+   "id": "one_hop-024",
+   "group": "one_hop",
+   "question": "Which dashboards show column subscription_id of the mart.customer_churn table?",
+   "gold": [
+    "rpt_carrier_scorecard"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": true,
+   "plan_correct": false,
+   "seconds": 0.987972207999519,
+   "error": ""
+  },
+  {
+   "id": "one_hop-025",
+   "group": "one_hop",
+   "question": "Which tables does the pipeline pl_mart_account_health read from?",
+   "gold": [
+    "core.dim_account",
+    "core.fct_collections"
+   ],
+   "predicted": [
+    "mart.account_health"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6520732079998197,
+   "error": ""
+  },
+  {
+   "id": "one_hop-026",
+   "group": "one_hop",
+   "question": "What are the input tables of pl_core_dim_employee?",
+   "gold": [
+    "stg.shop_employees",
+    "stg.wms_employees"
+   ],
+   "predicted": [
+    "core.dim_employee",
+    "mart.headcount"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.5673560830000497,
+   "error": ""
+  },
+  {
+   "id": "one_hop-027",
+   "group": "one_hop",
+   "question": "What are the input tables of pl_stg_shop_employees?",
+   "gold": [
+    "shop.employees"
+   ],
+   "predicted": [
+    "stg.shop_employees",
+    "core.dim_employee",
+    "mart.headcount"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.669329999999718,
+   "error": ""
+  },
+  {
+   "id": "one_hop-028",
+   "group": "one_hop",
+   "question": "What are the input tables of pl_stg_erp_customers?",
+   "gold": [
+    "erp.customers"
+   ],
+   "predicted": [
+    "stg.erp_customers",
+    "core.bridge_customer_account",
+    "core.dim_customer",
+    "core.dim_geography",
+    "mart.customer_ltv"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7197529160002887,
+   "error": ""
+  },
+  {
+   "id": "one_hop-029",
+   "group": "one_hop",
+   "question": "What are the input tables of pl_stg_crm_reviews?",
+   "gold": [
+    "crm.reviews"
+   ],
+   "predicted": [
+    "stg.crm_reviews",
+    "core.fct_reviews",
+    "mart.web_funnel"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6222757919995274,
+   "error": ""
+  },
+  {
+   "id": "one_hop-030",
+   "group": "one_hop",
+   "question": "Which tables does the pipeline pl_mart_customer_ltv read from?",
+   "gold": [
+    "core.dim_customer"
+   ],
+   "predicted": [
+    "mart.customer_ltv"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7294328340003631,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-001",
+   "group": "multi_hop",
+   "question": "Which dashboards ultimately use wms.employees.job_title?",
+   "gold": [
+    "rpt_campaign_roi"
+   ],
+   "predicted": [
+    "rpt_campaign_roi"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.7475885419999031,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-002",
+   "group": "multi_hop",
+   "question": "If crm.tickets.updated_at changes, which reports are affected?",
+   "gold": [
+    "rpt_carrier_scorecard"
+   ],
+   "predicted": [
+    "rpt_carrier_scorecard"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.7300674170001002,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-003",
+   "group": "multi_hop",
+   "question": "If column started_on of the support.subscriptions table changes, which reports are affected?",
+   "gold": [
+    "rpt_credit_exposure",
+    "rpt_headcount_summary",
+    "rpt_monthly_recurring_revenue",
+    "rpt_revenue_overview",
+    "rpt_review_sentiment"
+   ],
+   "predicted": [
+    "rpt_revenue_overview",
+    "rpt_review_sentiment",
+    "rpt_credit_exposure",
+    "rpt_headcount_summary",
+    "rpt_monthly_recurring_revenue"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.7281039589997818,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-004",
+   "group": "multi_hop",
+   "question": "Which dashboards ultimately use web.shipments.destination_city?",
+   "gold": [
+    "rpt_customer_lifetime_value",
+    "rpt_marketing_weekly",
+    "rpt_payments_health",
+    "rpt_refund_monitor",
+    "rpt_sales_pipeline",
+    "rpt_supplier_scorecard"
+   ],
+   "predicted": [
+    "rpt_supplier_scorecard",
+    "rpt_customer_lifetime_value",
+    "rpt_marketing_weekly",
+    "rpt_payments_health",
+    "rpt_refund_monitor",
+    "rpt_sales_pipeline"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6475927080000474,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-005",
+   "group": "multi_hop",
+   "question": "Which dashboards ultimately use the destination_city column in erp.shipments?",
+   "gold": [
+    "rpt_customer_lifetime_value",
+    "rpt_marketing_weekly",
+    "rpt_refund_monitor",
+    "rpt_sales_pipeline",
+    "rpt_supplier_scorecard"
+   ],
+   "predicted": [
+    "rpt_supplier_scorecard",
+    "rpt_customer_lifetime_value",
+    "rpt_marketing_weekly",
+    "rpt_refund_monitor",
+    "rpt_sales_pipeline"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.7322481660003177,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-006",
+   "group": "multi_hop",
+   "question": "Where does the data in report rpt_payments_health originally come from?",
+   "gold": [
+    "billing",
+    "mkt",
+    "web"
+   ],
+   "predicted": [
+    "billing",
+    "mkt",
+    "web"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6133676670006025,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-007",
+   "group": "multi_hop",
+   "question": "Which source systems feed Daily Sales Flash?",
+   "gold": [
+    "billing",
+    "mkt",
+    "wms"
+   ],
+   "predicted": [
+    "mkt",
+    "wms",
+    "billing"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6213479999996707,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-008",
+   "group": "multi_hop",
+   "question": "Where does the data in the \"Review Sentiment\" dashboard originally come from?",
+   "gold": [
+    "billing",
+    "crm",
+    "mkt",
+    "support"
+   ],
+   "predicted": [
+    "support",
+    "billing",
+    "crm",
+    "mkt"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6206313330003468,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-009",
+   "group": "multi_hop",
+   "question": "Where does the data in the \"Marketing Weekly\" dashboard originally come from?",
+   "gold": [
+    "crm",
+    "erp",
+    "shop",
+    "support",
+    "web"
+   ],
+   "predicted": [
+    "crm",
+    "erp",
+    "shop",
+    "support",
+    "web"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6292867499996646,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-010",
+   "group": "multi_hop",
+   "question": "Where does the data in the \"Executive Summary\" dashboard originally come from?",
+   "gold": [
+    "billing",
+    "erp",
+    "mkt",
+    "shop",
+    "web",
+    "wms"
+   ],
+   "predicted": [
+    "shop",
+    "wms",
+    "billing",
+    "erp",
+    "mkt",
+    "web"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6165262499998789,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-011",
+   "group": "multi_hop",
+   "question": "Which tables are built, directly or indirectly, from web.shipments?",
+   "gold": [
+    "core.bridge_order_shipment",
+    "core.dim_channel",
+    "core.fct_fulfilment",
+    "core.fct_shipments",
+    "mart.headcount",
+    "mart.sales_by_region",
+    "mart.sales_daily",
+    "mart.shipping_sla",
+    "mart.supplier_scorecard",
+    "mart.support_backlog",
+    "mart.web_funnel",
+    "stg.web_shipments"
+   ],
+   "predicted": [
+    "stg.web_shipments",
+    "core.bridge_order_shipment",
+    "core.dim_channel",
+    "core.fct_fulfilment",
+    "core.fct_shipments",
+    "mart.headcount",
+    "mart.sales_by_region",
+    "mart.sales_daily",
+    "mart.shipping_sla",
+    "mart.supplier_scorecard",
+    "mart.support_backlog",
+    "mart.web_funnel"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5819271250002203,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-012",
+   "group": "multi_hop",
+   "question": "Which tables are built, directly or indirectly, from stg.erp_customers?",
+   "gold": [
+    "core.bridge_customer_account",
+    "core.dim_customer",
+    "core.dim_geography",
+    "mart.customer_ltv"
+   ],
+   "predicted": [
+    "core.bridge_customer_account",
+    "core.dim_customer",
+    "core.dim_geography",
+    "mart.customer_ltv"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6261907499992958,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-013",
+   "group": "multi_hop",
+   "question": "What tables sit downstream of stg.wms_campaigns?",
+   "gold": [
+    "core.dim_campaign",
+    "core.fct_spend",
+    "mart.campaign_roi",
+    "mart.product_ranking"
+   ],
+   "predicted": [
+    "core.dim_campaign",
+    "core.fct_spend",
+    "mart.campaign_roi",
+    "mart.product_ranking"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6262108330001865,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-014",
+   "group": "multi_hop",
+   "question": "Which tables are built, directly or indirectly, from web.addresses?",
+   "gold": [
+    "core.dim_channel",
+    "core.fct_sessions",
+    "mart.sales_daily",
+    "stg.web_addresses"
+   ],
+   "predicted": [
+    "stg.web_addresses",
+    "core.dim_channel",
+    "core.fct_sessions",
+    "mart.sales_daily"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5835910000005242,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-015",
+   "group": "multi_hop",
+   "question": "What tables sit downstream of billing.refunds?",
+   "gold": [
+    "core.fct_refunds",
+    "mart.support_backlog",
+    "mart.support_csat",
+    "stg.billing_refunds"
+   ],
+   "predicted": [
+    "stg.billing_refunds",
+    "core.fct_refunds",
+    "mart.support_backlog",
+    "mart.support_csat"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5798519999998462,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-016",
+   "group": "multi_hop",
+   "question": "Which owners are affected downstream if support.returns.return_reason is dropped?",
+   "gold": [
+    "Asha Verma",
+    "Daniel Okafor",
+    "Hannah Schmidt",
+    "Lucas Ferreira",
+    "Omar Haddad"
+   ],
+   "predicted": [
+    "Daniel Okafor",
+    "Omar Haddad",
+    "Hannah Schmidt",
+    "Asha Verma",
+    "Lucas Ferreira"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6984361670001817,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-017",
+   "group": "multi_hop",
+   "question": "Which owners are affected downstream if column email of the erp.customers table is dropped?",
+   "gold": [
+    "Arjun Mehta",
+    "Asha Verma",
+    "Daniel Okafor",
+    "Ingrid Larsen",
+    "Kwame Mensah",
+    "Lucas Ferreira",
+    "Mei Tanaka",
+    "Priya Nair",
+    "Sofia Romano"
+   ],
+   "predicted": [
+    "Arjun Mehta",
+    "Daniel Okafor",
+    "Kwame Mensah",
+    "Lucas Ferreira",
+    "Mei Tanaka",
+    "Priya Nair",
+    "Sofia Romano",
+    "Asha Verma",
+    "Ingrid Larsen"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6828317090003111,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-018",
+   "group": "multi_hop",
+   "question": "Which owners are affected downstream if column refund_amount of the billing.refunds table is dropped?",
+   "gold": [
+    "Arjun Mehta",
+    "Daniel Okafor",
+    "Hannah Schmidt",
+    "Kwame Mensah",
+    "Mei Tanaka",
+    "Omar Haddad",
+    "Sofia Romano",
+    "Tomasz Kowalski"
+   ],
+   "predicted": [
+    "Omar Haddad",
+    "Tomasz Kowalski",
+    "Daniel Okafor",
+    "Arjun Mehta",
+    "Hannah Schmidt",
+    "Mei Tanaka",
+    "Kwame Mensah",
+    "Sofia Romano"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6979614589999983,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-019",
+   "group": "multi_hop",
+   "question": "Which owners are affected downstream if wms.employees.manager_id is dropped?",
+   "gold": [
+    "Arjun Mehta",
+    "Daniel Okafor",
+    "Hannah Schmidt",
+    "Ingrid Larsen",
+    "Kwame Mensah",
+    "Omar Haddad"
+   ],
+   "predicted": [
+    "Daniel Okafor",
+    "Ingrid Larsen",
+    "Hannah Schmidt",
+    "Kwame Mensah",
+    "Arjun Mehta",
+    "Omar Haddad"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6991172090001783,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-020",
+   "group": "multi_hop",
+   "question": "Which owners are affected downstream if billing.invoices.gross_amount is dropped?",
+   "gold": [
+    "Daniel Okafor",
+    "Hannah Schmidt",
+    "Mei Tanaka",
+    "Omar Haddad",
+    "Priya Nair",
+    "Sofia Romano",
+    "Tomasz Kowalski"
+   ],
+   "predicted": [
+    "Sofia Romano",
+    "Hannah Schmidt",
+    "Omar Haddad",
+    "Priya Nair",
+    "Mei Tanaka",
+    "Tomasz Kowalski",
+    "Daniel Okafor"
+   ],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6906314580000981,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-021",
+   "group": "multi_hop",
+   "question": "Trace mart.revenue_monthly.gross_amount back to its raw source columns.",
+   "gold": [
+    "billing.invoices.gross_amount"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.1003031660002307,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-022",
+   "group": "multi_hop",
+   "question": "Trace column destination_city of the mart.sales_by_region table back to its raw source columns.",
+   "gold": [
+    "erp.shipments.destination_city",
+    "web.shipments.destination_city"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.083671792000132,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-023",
+   "group": "multi_hop",
+   "question": "Which source-system columns does mart.cash_collected.order_id originate from?",
+   "gold": [
+    "erp.payments.order_id",
+    "web.payments.order_id"
+   ],
+   "predicted": [
+    "erp",
+    "web"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7019227079999837,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-024",
+   "group": "multi_hop",
+   "question": "Trace mart.payment_health.vat_amount back to its raw source columns.",
+   "gold": [
+    "billing.invoices.vat_amount"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7972085410001455,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-025",
+   "group": "multi_hop",
+   "question": "Which source-system columns does mart.product_ranking.started_at originate from?",
+   "gold": [
+    "shop.sessions.started_at"
+   ],
+   "predicted": [
+    "shop"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6885959159999402,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-026",
+   "group": "multi_hop",
+   "question": "Which pipelines have to succeed for report rpt_support_backlog to be up to date?",
+   "gold": [
+    "pl_core_fct_contacts",
+    "pl_core_fct_leads",
+    "pl_core_fct_shipments",
+    "pl_mart_lead_conversion",
+    "pl_mart_support_backlog",
+    "pl_stg_erp_leads",
+    "pl_stg_erp_shipments",
+    "pl_stg_web_leads",
+    "pl_stg_web_shipments"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.5774156670004231,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-027",
+   "group": "multi_hop",
+   "question": "Which pipelines have to succeed for report rpt_daily_sales_flash to be up to date?",
+   "gold": [
+    "pl_core_dim_channel",
+    "pl_core_fct_collections",
+    "pl_core_fct_inventory",
+    "pl_core_fct_invoices",
+    "pl_mart_invoice_ageing",
+    "pl_mart_sales_daily",
+    "pl_stg_billing_invoices",
+    "pl_stg_billing_order_items",
+    "pl_stg_mkt_invoices",
+    "pl_stg_mkt_orders",
+    "pl_stg_wms_inventory"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.5786207500004821,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-028",
+   "group": "multi_hop",
+   "question": "Which pipelines have to succeed for Web Funnel to be up to date?",
+   "gold": [
+    "pl_core_bridge_order_shipment",
+    "pl_core_dim_channel",
+    "pl_core_fct_reviews",
+    "pl_core_fct_shipments",
+    "pl_mart_sales_daily",
+    "pl_mart_web_funnel",
+    "pl_stg_erp_shipments",
+    "pl_stg_shop_sessions",
+    "pl_stg_web_addresses",
+    "pl_stg_web_shipments"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.5814309999996112,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-029",
+   "group": "multi_hop",
+   "question": "Which jobs does the Executive Summary report depend on, end to end?",
+   "gold": [
+    "pl_core_dim_channel",
+    "pl_core_fct_invoices",
+    "pl_core_fct_shipments",
+    "pl_core_fct_spend",
+    "pl_mart_revenue_monthly",
+    "pl_mart_support_backlog",
+    "pl_stg_billing_invoices",
+    "pl_stg_billing_order_items",
+    "pl_stg_erp_shipments",
+    "pl_stg_mkt_invoices",
+    "pl_stg_shop_campaigns",
+    "pl_stg_web_shipments",
+    "pl_stg_wms_campaigns"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.7044787920003728,
+   "error": ""
+  },
+  {
+   "id": "multi_hop-030",
+   "group": "multi_hop",
+   "question": "Which jobs does report rpt_account_health depend on, end to end?",
+   "gold": [
+    "pl_core_fct_contacts",
+    "pl_core_fct_leads",
+    "pl_mart_lead_conversion",
+    "pl_stg_erp_leads",
+    "pl_stg_web_leads"
+   ],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.6934934169994449,
+   "error": ""
+  },
+  {
+   "id": "negative-001",
+   "group": "negative",
+   "question": "Is column import_batch of the erp.payments table used by any report?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6723241249992498,
+   "error": ""
+  },
+  {
+   "id": "negative-002",
+   "group": "negative",
+   "question": "Which reports depend on support.returns.tmp_notes?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5957553750004081,
+   "error": ""
+  },
+  {
+   "id": "negative-003",
+   "group": "negative",
+   "question": "Which reports depend on wms.products.tmp_notes?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6007303750002393,
+   "error": ""
+  },
+  {
+   "id": "negative-004",
+   "group": "negative",
+   "question": "Is mkt.accounts.import_batch used by any report?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5926215409999713,
+   "error": ""
+  },
+  {
+   "id": "negative-005",
+   "group": "negative",
+   "question": "Which reports depend on support.reviews.import_batch?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5929328330003045,
+   "error": ""
+  },
+  {
+   "id": "negative-006",
+   "group": "negative",
+   "question": "Is shop.sessions.import_batch used by any report?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5824795420003284,
+   "error": ""
+  },
+  {
+   "id": "negative-007",
+   "group": "negative",
+   "question": "Is shop.sessions.tmp_notes used by any report?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.5805746249998265,
+   "error": ""
+  },
+  {
+   "id": "negative-008",
+   "group": "negative",
+   "question": "Is crm.returns.legacy_flag used by any report?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 0.6960742080000273,
+   "error": ""
+  },
+  {
+   "id": "negative-009",
+   "group": "negative",
+   "question": "Which dashboards would break if the brand column in shop.products were removed?",
+   "gold": [],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": true,
+   "plan_correct": false,
+   "seconds": 1.030898041999535,
+   "error": ""
+  },
+  {
+   "id": "negative-010",
+   "group": "negative",
+   "question": "Which reports depend on column updated_at of the mkt.order_items table?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 3.1541606249993492,
+   "error": ""
+  },
+  {
+   "id": "negative-011",
+   "group": "negative",
+   "question": "Which dashboards would break if the gross_amount column in mkt.invoices were removed?",
+   "gold": [],
+   "predicted": [],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": true,
+   "plan_correct": false,
+   "seconds": 4.682301417000417,
+   "error": ""
+  },
+  {
+   "id": "negative-012",
+   "group": "negative",
+   "question": "Which dashboards would break if the restocked column in support.returns were removed?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 2.4676840829997673,
+   "error": ""
+  },
+  {
+   "id": "negative-013",
+   "group": "negative",
+   "question": "Which dashboards would break if the opened_on column in mkt.accounts were removed?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 1.9299303339994367,
+   "error": ""
+  },
+  {
+   "id": "negative-014",
+   "group": "negative",
+   "question": "Which reports depend on erp.payments.gateway_ref?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 1.7478440000004412,
+   "error": ""
+  },
+  {
+   "id": "negative-015",
+   "group": "negative",
+   "question": "Which dashboards would break if column product_id of the shop.products table were removed?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 4.201775999999882,
+   "error": ""
+  },
+  {
+   "id": "negative-016",
+   "group": "negative",
+   "question": "Which dashboards would break if column payment_id of the billing.refunds table were removed?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": true,
+   "seconds": 1.4350972079992061,
+   "error": ""
+  },
+  {
+   "id": "negative-017",
+   "group": "negative",
+   "question": "Which pipelines or reports use column row_hash of the stg.shop_sessions table?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 2.069857833000242,
+   "error": ""
+  },
+  {
+   "id": "negative-018",
+   "group": "negative",
+   "question": "Does anything downstream read core.bridge_customer_account.account_id?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 0.9693570419995012,
+   "error": ""
+  },
+  {
+   "id": "negative-019",
+   "group": "negative",
+   "question": "Does anything downstream read column topic of the mart.carrier_scorecard table?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.278259583000363,
+   "error": ""
+  },
+  {
+   "id": "negative-020",
+   "group": "negative",
+   "question": "Does anything downstream read column row_hash of the stg.support_suppliers table?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.879102208000404,
+   "error": ""
+  },
+  {
+   "id": "negative-021",
+   "group": "negative",
+   "question": "Does anything downstream read core.fct_returns.returned_on?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 3.556487957999707,
+   "error": ""
+  },
+  {
+   "id": "negative-022",
+   "group": "negative",
+   "question": "Does anything downstream read column lead_id of the core.fct_pipeline table?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.284572666000713,
+   "error": ""
+  },
+  {
+   "id": "negative-023",
+   "group": "negative",
+   "question": "Does anything downstream read stg.billing_orders.row_hash?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.189357041999756,
+   "error": ""
+  },
+  {
+   "id": "negative-024",
+   "group": "negative",
+   "question": "Which reports display column currency of the stg.erp_payments table directly, without any further processing?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.842888540999411,
+   "error": ""
+  },
+  {
+   "id": "negative-025",
+   "group": "negative",
+   "question": "Which reports display stg.crm_tickets.topic directly, without any further processing?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.7888480840001648,
+   "error": ""
+  },
+  {
+   "id": "negative-026",
+   "group": "negative",
+   "question": "Which reports display column approved_by of the stg.billing_refunds table directly, without any further processing?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 2.017107250000663,
+   "error": ""
+  },
+  {
+   "id": "negative-027",
+   "group": "negative",
+   "question": "Which reports display column destination_city of the stg.web_shipments table directly, without any further processing?",
+   "gold": [],
+   "predicted": [
+    "rpt_supplier_scorecard",
+    "rpt_customer_lifetime_value",
+    "rpt_marketing_weekly",
+    "rpt_payments_health",
+    "rpt_refund_monitor",
+    "rpt_sales_pipeline"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.6110744170000544,
+   "error": ""
+  },
+  {
+   "id": "negative-028",
+   "group": "negative",
+   "question": "Which reports display stg.web_leads.lead_id directly, without any further processing?",
+   "gold": [],
+   "predicted": [
+    "rpt_customer_lifetime_value",
+    "rpt_stock_cover",
+    "rpt_account_health",
+    "rpt_support_backlog",
+    "rpt_traffic_sources"
+   ],
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "exact": false,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.6421655000003739,
+   "error": ""
+  },
+  {
+   "id": "negative-029",
+   "group": "negative",
+   "question": "Which reports display the review_title column in stg.support_reviews directly, without any further processing?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.3182468340000923,
+   "error": ""
+  },
+  {
+   "id": "negative-030",
+   "group": "negative",
+   "question": "Which reports display stg.wms_inventory.reorder_point directly, without any further processing?",
+   "gold": [],
+   "predicted": [],
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "exact": true,
+   "abstained": false,
+   "plan_correct": false,
+   "seconds": 1.2981711660004294,
+   "error": ""
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "k=5": {
+  "lookup": {
+   "questions": 15,
+   "answer_recall_bound": 0.933,
+   "all_answers_present": 0.933
+  },
+  "one_hop": {
+   "questions": 15,
+   "answer_recall_bound": 0.933,
+   "all_answers_present": 0.933
+  },
+  "multi_hop": {
+   "questions": 15,
+   "answer_recall_bound": 0.211,
+   "all_answers_present": 0.0
+  }
+ },
+ "k=8": {
+  "lookup": {
+   "questions": 15,
+   "answer_recall_bound": 0.933,
+   "all_answers_present": 0.933
+  },
+  "one_hop": {
+   "questions": 15,
+   "answer_recall_bound": 1.0,
+   "all_answers_present": 1.0
+  },
+  "multi_hop": {
+   "questions": 15,
+   "answer_recall_bound": 0.295,
+   "all_answers_present": 0.0
+  }
+ },
+ "k=10": {
+  "lookup": {
+   "questions": 15,
+   "answer_recall_bound": 0.933,
+   "all_answers_present": 0.933
+  },
+  "one_hop": {
+   "questions": 15,
+   "answer_recall_bound": 1.0,
+   "all_answers_present": 1.0
+  },
+  "multi_hop": {
+   "questions": 15,
+   "answer_recall_bound": 0.302,
+   "all_answers_present": 0.0
+  }
+ },
+ "k=20": {
+  "lookup": {
+   "questions": 15,
+   "answer_recall_bound": 0.933,
+   "all_answers_present": 0.933
+  },
+  "one_hop": {
+   "questions": 15,
+   "answer_recall_bound": 1.0,
+   "all_answers_present": 1.0
+  },
+  "multi_hop": {
+   "questions": 15,
+   "answer_recall_bound": 0.554,
+   "all_answers_present": 0.333
+  }
+ }
+}

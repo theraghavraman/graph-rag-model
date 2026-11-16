@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      # The committed question set must be exactly what the generator produces.
+      - run: |
+          catalog-graph build --out /tmp/data
+          diff /tmp/data/questions.jsonl data/questions.jsonl
+          diff /tmp/data/questions_paraphrased.jsonl data/questions_paraphrased.jsonl
+          diff /tmp/data/documents.jsonl data/documents.jsonl

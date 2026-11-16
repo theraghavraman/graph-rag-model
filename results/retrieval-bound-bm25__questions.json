@@ -1,0 +1,53 @@
+{
+ "k=5": {
+  "lookup": {
+   "questions": 30,
+   "answer_recall_bound": 0.967,
+   "all_answers_present": 0.867
+  },
+  "one_hop": {
+   "questions": 30,
+   "answer_recall_bound": 1.0,
+   "all_answers_present": 1.0
+  },
+  "multi_hop": {
+   "questions": 30,
+   "answer_recall_bound": 0.172,
+   "all_answers_present": 0.0
+  }
+ },
+ "k=10": {
+  "lookup": {
+   "questions": 30,
+   "answer_recall_bound": 0.98,
+   "all_answers_present": 0.9
+  },
+  "one_hop": {
+   "questions": 30,
+   "answer_recall_bound": 1.0,
+   "all_answers_present": 1.0
+  },
+  "multi_hop": {
+   "questions": 30,
+   "answer_recall_bound": 0.288,
+   "all_answers_present": 0.033
+  }
+ },
+ "k=20": {
+  "lookup": {
+   "questions": 30,
+   "answer_recall_bound": 0.98,
+   "all_answers_present": 0.9
+  },
+  "one_hop": {
+   "questions": 30,
+   "answer_recall_bound": 1.0,
+   "all_answers_present": 1.0
+  },
+  "multi_hop": {
+   "questions": 30,
+   "answer_recall_bound": 0.433,
+   "all_answers_present": 0.233
+  }
+ }
+}
